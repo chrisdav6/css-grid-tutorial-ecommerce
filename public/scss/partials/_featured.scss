@@ -1,0 +1,18 @@
+#featured-section {
+  padding: 50px 0;
+  
+  .section-description {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .button-container {
+    margin: 80px 0;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: $gutter;
+  }
+}

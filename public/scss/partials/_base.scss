@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  
+  &:visited {
+    color: $text-color;
+  }
+}
+
+h1, h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.button-dark {
+  border: 1px solid $text-color;
+  padding: 12px 40px;
+  
+  &:hover {
+    color: $white;
+    background: $text-color;
+  }
+}
+
+.button-light {
+  border: 1px solid $white;
+  color: $white;
+  padding: 12px 40px;
+  margin-right: 14px;
+  
+  &:hover {
+    color: $text-color;
+    background: $white;
+  }
+}

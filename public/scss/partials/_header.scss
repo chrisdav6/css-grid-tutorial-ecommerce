@@ -1,0 +1,62 @@
+header {
+  background: url(../img/triangles.svg);
+  background-size: cover;
+  background-position: center;
+  color: $white;
+}
+
+//Top Nav
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-nav a {
+  color: $white;
+  
+  &:hover {
+    color: darken($white, 10%);
+  }
+}
+
+//Hero
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $gutter;
+  padding-top: 20px;
+  padding-bottom: 84px;
+  
+  .hero-image {
+    padding-left: 60px;
+  }
+
+  h1 {
+    font-size: 52px;
+    margin-top: 50px;
+  }
+  
+  p {
+    margin: 40px 0 68px;
+  }
+}
+
+

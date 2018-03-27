@@ -5,15 +5,25 @@ footer {
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+  text-align: center;
+  
+  @include mq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 footer ul {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
+  margin-top: 10px;
+  
+  @include mq {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 0;
+  }
   
   a {
     color: $white;
@@ -22,4 +32,8 @@ footer ul {
       color: darken($white, 30%);
     }
   }
+}
+
+footer li {
+  display: inline-block;
 }

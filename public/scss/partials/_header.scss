@@ -9,9 +9,14 @@ header {
 
 .top-nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding: 40px 0;
+  align-items: center;
+  
+  @include mq {
+    flex-direction: row;
+  }
 }
 
 .logo {
@@ -22,7 +27,11 @@ header {
 .top-nav ul {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 60%;
+  
+  @include mq {
+    width: 40%;
+  }
 }
 
 .top-nav a {
@@ -37,18 +46,29 @@ header {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: $gutter;
   padding-top: 20px;
   padding-bottom: 84px;
+  text-align: center;
+  
+  @include mq {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+  }
   
   .hero-image {
-    padding-left: 60px;
+    margin-top: 40px;
+    
+    @include mq {
+      padding-left: 60px;
+      margin-top: 0;
+    }
   }
 
   h1 {
     font-size: 52px;
-    margin-top: 50px;
   }
   
   p {

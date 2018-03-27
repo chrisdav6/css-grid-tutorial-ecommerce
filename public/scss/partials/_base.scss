@@ -10,6 +10,12 @@ a {
   color: $text-color;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 h1, h2 {
   font-family: "Montserrat", Arial, sans-serif;
 }
